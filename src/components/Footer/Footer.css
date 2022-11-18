@@ -1,0 +1,48 @@
+.footer-container{
+    position: relative;
+}
+.footer-container>hr{
+    border: 1px solid var(--lightgray);
+    width: 50rem;
+}
+
+.footer{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+}
+
+.links{
+    display: flex;
+    gap: 5rem;
+}
+.links>img{
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.logo{
+    padding-right: 9rem;
+}
+
+.blur{
+    bottom: 0;
+    right: 15%;
+    width: 26rem;
+    height: 12rem;
+    
+}
+
+.blur-1{
+    bottom: 0;
+    left: 25%;
+    width: 26rem;
+    height: 12rem;
+    filter: blur(200px);
+    background: rgb(255, 115, 0);
+}

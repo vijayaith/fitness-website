@@ -1,0 +1,103 @@
+.plans-container{
+    margin-top: -4rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.plans-header{
+    font-size: 3.5rem;
+    display: flex;
+    gap: 4rem;
+    padding-left: 2rem;
+}
+
+.plans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    gap: 4rem;
+    padding-top: 4rem;
+}
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    background: var(--caloryCard);
+    color: white;
+    gap: 2rem;
+    padding: 2rem;
+    width: 15rem;
+}
+.plan:nth-child(2){    /*  object plansData has 3 child  */
+     background: var(--planCard);
+     transform: scale(1.1);  /* w.r.t other two children */
+     font-size: 1.2rem;
+}
+.plan:nth-child(1)>svg{
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+.plan:nth-child(2)>svg{
+    width: 3rem;
+    height: 3rem;
+}
+.plan:nth-child(3)>svg{
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.plan>:nth-child(3){    /* plan>:nth-child() will target child of each 3 different plan */
+    font-size: 2rem;
+    font-weight: bold;
+}
+.plan>:nth-child(5){    /* 5th child of each plane is (see more benefits) */
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+/* x>y means y is child(inside) of x */
+.features{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+} 
+
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.feature>img{
+    width: 1.2rem;
+}
+
+
+/* responsive */
+@media screen and (max-width:768px){
+    .plans-container{
+      flex-direction: column;
+    }
+    .plans-header{
+        flex-direction: column;
+        font-size: xx-large;
+        padding: 1rem;
+        display: inline-block;
+        padding: 2rem;
+    }
+    .plans{
+        flex-direction: column;
+    }
+    .plan{
+        width: auto;
+        align-items: center;
+        padding-left: 1rem;
+    }
+    .plan:nth-child(2){
+        transform: none;
+    }
+}
